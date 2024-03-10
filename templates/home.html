@@ -49,17 +49,41 @@
     </div>
   </section>
   
+  <section class="container-fluid p-2">
+    <div class="row my-4"> 
+      <div class="col-lg-6 text-center order-2 order-lg-1">
+        <h2 class="display-3 py-4">yo momma cute:)</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer placerat ornare tempus. Nunc id lectus accumsan, posuere odio quis, mattis tortor. Suspendisse gravida dignissim condimentum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ultricies enim et odio sodales semper. Mauris consectetur, erat eget convallis egestas, dui justo tristique nulla, id commodo magna sem id arcu. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam est arcu, bibendum non felis eget, malesuada lobortis elit. Quisque eget pulvinar felis.</p>
+
+        <p>Integer dictum tempor dignissim. Donec sit amet euismod nibh. Integer sapien felis, auctor nec quam a, aliquet faucibus quam. Proin at metus urna. Vivamus imperdiet neque sit amet turpis cursus rhoncus. Donec porta, nisl sed malesuada tincidunt, neque orci fermentum sapien, nec interdum nunc magna a massa. Vestibulum et augue efficitur, vehicula est at, ultrices velit. Nulla imperdiet lectus interdum, vehicula urna nec, porta ligula.</p>
+      </div>
+      <div class="col-lg-6 order-1 order-lg-2">
+        <img src="static/banner2.avif" alt="" class="img-fluid mr-0">
+      </div>
+    </div>
+  </section>
+
+  <section class="container-fluid">
+    <div class="text-center">
+      <h2 class="display-3">open positions at {{company_name}}:</h2>
+      <div class="row">
+        {% for job in jobs %}
+        <div class="col-md-6 col-lg-3 my-2">
+           <h4 class="mb-1">{{job['title']}}</h4>
+          <div class="row">
+            <div class="col-6">
+              <i>@{{job['location']}}</i>
+            </div>
+            <div class="col-6">
+              <button class="btn btn-outline-light">apply now</button>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
   
-  <div class="container text-center py-4"> 
-    <h2 class="display-3 py-4">Open Positions:</h2>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer placerat ornare tempus. Nunc id lectus accumsan, posuere odio quis, mattis tortor. Suspendisse gravida dignissim condimentum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ultricies enim et odio sodales semper. Mauris consectetur, erat eget convallis egestas, dui justo tristique nulla, id commodo magna sem id arcu. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam est arcu, bibendum non felis eget, malesuada lobortis elit. Quisque eget pulvinar felis.
-
- Aenean massa turpis, venenatis in est id, congue vulputate urna. Maecenas velit ex, cursus et dignissim quis, malesuada eu metus. Aliquam at efficitur tellus. Cras placerat, orci ac scelerisque maximus, lectus quam feugiat neque, ut rhoncus nisi nisl a lorem. Aenean id faucibus justo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam pellentesque nec est fermentum blandit. Aenean rhoncus a purus eget gravida. Curabitur tortor ligula, feugiat eu auctor a, interdum ut tellus. Vestibulum at sodales eros, vel mattis libero.</p>
-
-    <p>Etiam vehicula, urna nec lacinia pellentesque, mauris ante ultrices dolor, a semper nisi erat sed massa. Morbi scelerisque dolor id libero commodo porta. Fusce at rutrum quam. Proin non metus vestibulum, ornare magna a, sodales urna. Curabitur in porta mauris, quis commodo eros. Nulla vel magna ex. Cras volutpat eget nibh et aliquet. Donec convallis magna massa, sit amet maximus felis rutrum at. Morbi quis interdum risus. Nulla imperdiet lectus ante, eu tempus augue dictum quis. Aliquam tellus magna, tincidunt at fermentum non, gravida nec justo. Quisque sed faucibus lacus. Aliquam tempus, orci eu vestibulum efficitur, nisi lectus aliquam tortor, a interdum justo sem tristique dolor. Sed vehicula rhoncus velit ut vulputate. Aenean ut aliquam turpis. Maecenas convallis, enim vel varius ultrices, lorem augue pretium turpis, in vehicula nulla enim laoreet erat. In sed commodo justo, nec convallis tortor. Phasellus consequat eget est eu varius. Aenean fringilla velit id diam semper aliquam. Proin feugiat posuere est id vehicula. Nunc efficitur leo nulla, nec egestas diam rutrum eu. Integer posuere in ligula sit amet vestibulum. Nulla bibendum est quam, vel finibus enim ultrices nec. Aliquam sapien tortor, egestas vel ornare vitae, pulvinar ac ex. Nulla egestas blandit nisi in venenatis. Sed id faucibus massa.</p>
-
-    <p>Integer dictum tempor dignissim. Donec sit amet euismod nibh. Integer sapien felis, auctor nec quam a, aliquet faucibus quam. Proin at metus urna. Vivamus imperdiet neque sit amet turpis cursus rhoncus. Donec porta, nisl sed malesuada tincidunt, neque orci fermentum sapien, nec interdum nunc magna a massa. Vestibulum et augue efficitur, vehicula est at, ultrices velit. Nulla imperdiet lectus interdum, vehicula urna nec, porta ligula.</p>
-  <button class="btn btn-light my-5">Contact Us!</button></div>
  
 </body>
 </html>
